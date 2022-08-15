@@ -1,9 +1,10 @@
 const express = require('express');
 const path = require('path');
 const { engine } = require('express-handlebars');
-const { escapeRegExp } = require('lodash');
 require('dotenv').config();
 const PORT = process.env.PORT || 3333;
+
+const { view_routes } = require('./controllers');
 
 const app = express();
 
@@ -14,8 +15,6 @@ app.set('view engine', 'hbs');
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
-app.get('/', (req, res) => {
-    res.render('index', { })
-})
+app.use('/', view_routes);
 
 app.listen(PORT, () => console.log(`Listening on ${PORT}`));
