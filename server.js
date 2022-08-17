@@ -6,6 +6,7 @@ const db = require('./config/db_connection');
 require('dotenv').config();
 
 const { view_routes } = require('./controllers');
+const User = require('./models/User');
 
 const app = express();
 
