@@ -8,4 +8,12 @@ view_router.get('/', (req, res) => {
     res.render('index');
 });
 
+view_router.get('/login', (req, res) => {
+    res.render('login');
+})
+
+view_router.get('/register', (req, res) => {
+    res.render('register');
+})
+
 module.exports = view_router;

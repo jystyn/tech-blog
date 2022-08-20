@@ -1,7 +1,7 @@
 const express = require('express');
 const path = require('path');
 const { engine } = require('express-handlebars');
-const PORT = process.env.PORT || 3333;
+const PORT = process.env.PORT || 3131;
 const db = require('./config/db_connection');
 require('dotenv').config();
 
