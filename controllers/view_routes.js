@@ -9,10 +9,16 @@ view_router.get('/', (req, res) => {
 });
 
 view_router.get('/login', (req, res) => {
+   req.session.save(() => {
+    req.session.something = 'something'
+    console.log('session was created');
+   })
+   
     res.render('login');
 })
 
 view_router.get('/register', (req, res) => {
+    console.log(req.session.something)
     res.render('register');
 })
 
