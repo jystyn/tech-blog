@@ -32,8 +32,9 @@
   ```
 
   ## Heroku Link
-
-  https://jystyn-tech-blog.herokuapp.com/
+  
+  NOT FUNCTION YET
+  https://jystyn-tech-blog.herokuapp.com/ 
 
   ## License
 
