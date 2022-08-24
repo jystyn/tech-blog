@@ -33,7 +33,7 @@
 
   ## Heroku Link
   
-  NOT FUNCTION YET
+  NOT FUNCTIONAL YET
   https://jystyn-tech-blog.herokuapp.com/ 
 
   ## License
