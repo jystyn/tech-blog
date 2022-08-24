@@ -1,6 +1,14 @@
-// Export an object that will hold all of our route files as properties
-module.exports = {
-    //Set up our view_routes property to our required view_routes object
-    view_routes: require('./view_routes'),
-    auth_routes: require('./auth_routes')
-};
+const router = require('express').Router();
+const apiRoutes = require('./api');
+const home_routes = require('./home_routes');
+const dashboard_routes = require('./dashboard_routes');
+
+router.use('/api', apiRoutes);
+router.use('/', home_routes);
+router.use('/dashboard', dashboard_routes);
+
+router.use((req, res) => {
+    res.status(404).end();
+});
+
+module.exports = router;
