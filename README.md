@@ -33,7 +33,7 @@
 
   ## Heroku Link
 
-  coming soon!
+  https://jystyn-tech-blog.herokuapp.com/
 
   ## License
 
